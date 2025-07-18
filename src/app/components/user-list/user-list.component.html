@@ -1,0 +1,17 @@
+<div class="user-list-container">
+    <h1>Administración de Usuarios</h1>
+
+    <app-user-table
+        [users]="users"
+        (userDetailsClick)="viewDetails($event)">
+    </app-user-table>
+
+    <button
+        mat-icon-button
+        color="warn"
+        (click)="onLogout()"
+        class="logout-button">
+        <mat-icon>exit_to_app</mat-icon>
+    </button>
+
+</div>

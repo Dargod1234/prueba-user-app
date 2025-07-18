@@ -1,0 +1,48 @@
+<div class="table-container">
+    <table mat-table [dataSource]="users" class="users-table">
+        <!-- Columna Nombre -->
+        <ng-container matColumnDef="name">
+            <th mat-header-cell *matHeaderCellDef>Nombre</th>
+            <td mat-cell *matCellDef="let user">{{ user.name }}</td>
+        </ng-container>
+
+        <!-- Columna Email -->
+        <ng-container matColumnDef="email">
+            <th mat-header-cell *matHeaderCellDef>Email</th>
+            <td mat-cell *matCellDef="let user">{{ user.email }}</td>
+        </ng-container>
+
+        <!-- Columna Empresa -->
+        <ng-container matColumnDef="company">
+            <th mat-header-cell *matHeaderCellDef>Empresa</th>
+            <td mat-cell *matCellDef="let user">{{ user.company }}</td>
+        </ng-container>
+
+        <!-- Columna Cargo -->
+        <ng-container matColumnDef="position">
+            <th mat-header-cell *matHeaderCellDef>Cargo</th>
+            <td mat-cell *matCellDef="let user">{{ user.position }}</td>
+        </ng-container>
+
+        <!-- Columna Acciones -->
+        <ng-container matColumnDef="actions">
+            <th mat-header-cell *matHeaderCellDef>Acciones</th>
+            <td mat-cell *matCellDef="let user">
+                <button
+                    mat-raised-button
+                    color="primary"
+                    (click)="onViewDetails(user.id)"
+                    class="details-button">
+                    <mat-icon>visibility</mat-icon>
+                    Detalles
+                </button>
+            </td>
+        </ng-container>
+
+        <!-- Definición de filas de encabezado y datos -->
+        <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+        <!-- Aplicamos la directiva appHighlight a cada fila de datos -->
+        <tr mat-row *matRowDef="let row; columns: displayedColumns;"
+            appHighlight="lightblue"></tr>
+    </table>
+</div>

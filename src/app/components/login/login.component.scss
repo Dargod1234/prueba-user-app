@@ -1,0 +1,75 @@
+.login-container {
+  width: 100%;
+  max-width: 400px;
+  margin: 100px auto;
+  padding: 2rem;
+  background-color: white;
+  border-radius: 12px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+
+  h1 {
+    font-size: 1.8rem;
+    font-weight: 600;
+    color: #2e3a59;
+    margin-bottom: 0.5rem;
+  }
+
+  .login-form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .full-width {
+    width: 100%;
+  }
+
+  button[type="submit"] {
+    font-weight: 500;
+    padding: 10px;
+    border-radius: 8px;
+    font-size: 1rem;
+    text-transform: none;
+    background-color: #1976d2;
+    color: white;
+    transition: background-color 0.3s ease;
+
+    &:hover {
+      background-color: #1565c0;
+    }
+
+    &:disabled {
+      background-color: #90caf9;
+      cursor: not-allowed;
+    }
+  }
+  ::ng-deep .mat-mdc-snack-bar-container.snackbar-error {
+    background-color: #e53935;
+    color: white;
+    font-weight: bold;
+    border-radius: 6px;
+    margin-bottom: 40px; // <- Aquí separas del fondo
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+  }
+
+
+}
+
+@media (max-width: 480px) {
+  .login-container {
+    margin: 40px 20px;
+    padding: 1.5rem;
+
+    h1 {
+      font-size: 1.5rem;
+    }
+  }
+
+  button[type="submit"] {
+    font-size: 0.95rem;
+  }
+}

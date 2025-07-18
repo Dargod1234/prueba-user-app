@@ -1,0 +1,53 @@
+{
+    "auth": {
+        "username": "admin",
+        "password": "123456"
+    },
+    "users": [
+        {
+            "id": 1,
+            "name": "Juan Pérez",
+            "email": "juan@example.com",
+            "phone": "+57 300 123 4567",
+            "company": "Tech Solutions",
+            "address": "Calle 123 #45-67, Bogotá",
+            "position": "Desarrollador Frontend"
+        },
+        {
+            "id": 2,
+            "name": "María González",
+            "email": "maria@example.com",
+            "phone": "+57 310 987 6543",
+            "company": "Digital Corp",
+            "address": "Carrera 7 #89-12, Medellín",
+            "position": "Diseñadora UX"
+        },
+        {
+            "id": 3,
+            "name": "Carlos López",
+            "email": "carlos@example.com",
+            "phone": "+57 320 456 7890",
+            "company": "Innovation Labs",
+            "address": "Avenida 15 #34-56, Cali",
+            "position": "Product Manager"
+        },
+        {
+            "id": 4,
+            "name": "Ana Rodríguez",
+            "email": "ana@example.com",
+            "phone": "+57 315 234 5678",
+            "company": "StartUp Inc",
+            "address": "Transversal 9 #78-90, Barranquilla",
+            "position": "Data Scientist"
+        },
+        {
+            "id": 5,
+            "name": "Diego Martínez",
+            "email": "diego@example.com",
+            "phone": "+57 305 567 8901",
+            "company": "Cloud Systems",
+            "address": "Diagonal 25 #56-78, Cartagena",
+            "position": "DevOps Engineer"
+        }
+    ]
+}
