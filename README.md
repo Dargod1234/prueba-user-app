@@ -154,15 +154,6 @@ ng build --stats-json
 npx webpack-bundle-analyzer dist/user-management-app/stats.json
 ```
 
-## Posibles Mejoras Futuras
-
-- Implementar refresh token
-- Añadir paginación en lista de usuarios
-- Agregar filtros y búsqueda
-- Implementar CRUD completo
-- Añadir tests unitarios y e2e
-- Internacionalización (i18n)
-
 ## Contacto
 
 Para cualquier pregunta sobre la implementación, no dudes en contactarme.
