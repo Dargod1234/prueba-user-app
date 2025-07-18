@@ -8,7 +8,8 @@ import { MatButtonModule } from '@angular/material/button';
 import { MatIconModule } from '@angular/material/icon';
 
 /**
- * Componente para obtener y mostrar el detalle de un usuario basado en su ID.
+ * Muestra el detalle de un usuario obtenido por ID desde la URL.
+ * Usa `UserService` para cargar los datos y permite volver a la lista.
  */
 @Component({
   selector: 'app-user-detail',

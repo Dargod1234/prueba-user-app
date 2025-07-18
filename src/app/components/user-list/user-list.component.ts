@@ -7,7 +7,7 @@ import { CommonModule } from '@angular/common';
 import { HighlightDirective } from '../../highlight.directive';
 import { MatButtonModule } from '@angular/material/button';
 import { MatIconModule } from '@angular/material/icon';
-import { AuthService } from '../../services/auth.service'; // Importar AuthService
+import { AuthService } from '../../services/auth.service'; 
 
 /**
  * Componente contenedor que obtiene y muestra la lista de usuarios.
@@ -29,7 +29,7 @@ export class UserListComponent implements OnInit {
   constructor(
     private userService: UserService,
     private router: Router,
-    private authService: AuthService // Inyectar AuthService
+    private authService: AuthService 
   ) {}
 
   /**
@@ -38,7 +38,7 @@ export class UserListComponent implements OnInit {
   ngOnInit(): void {
     this.userService.getUsers().subscribe({
       next: data => this.users = data,
-      error: (err) => console.error('Error al obtener usuarios:', err) // Cambiado a console.error para mejor manejo de errores
+      error: (err) => console.error('Error al obtener usuarios:', err) 
     });
   }
 

@@ -12,7 +12,7 @@ import { LoginCredentials, AuthResponse } from '../models/user.interface';
   providedIn: 'root'
 })
 export class AuthService {
-  private readonly apiUrl = 'http://localhost:3000'; // Base URL del mock json-server
+  private readonly apiUrl = 'http://localhost:3000'; 
 
   /** Estado interno de autenticación del usuario. */
   private isAuthenticatedSubject = new BehaviorSubject<boolean>(false);
@@ -21,7 +21,7 @@ export class AuthService {
   public readonly isAuthenticated$ = this.isAuthenticatedSubject.asObservable();
 
   constructor(private http: HttpClient) {
-    this.checkAuthStatus(); // Verifica si el usuario ya estaba autenticado
+    this.checkAuthStatus(); 
   }
 
   /**
